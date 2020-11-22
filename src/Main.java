@@ -34,11 +34,24 @@ class UserInterface implements Runnable {
     }
 
     private void createComponents(Container container) {
-        JButton button = new JButton("Click!");
-        container.add(button);
-        JLabel text = new JLabel("Text.");
-        container.add(text);
+        BoxLayout layout = new BoxLayout(container, BoxLayout.Y_AXIS);
+        container.setLayout(layout);
+
+        JButton b1 = new JButton("Single Player");
+        JButton b2 = new JButton("Multi Player");
+        JButton b3 = new JButton("About");
+
+        container.add(b1);
+        container.add(b2);
+        container.add(b3);
     }
+
+    // private void createComponents(Container container) {
+    //     JButton button = new JButton("Click!");
+    //     container.add(button);
+    //     JLabel text = new JLabel("Text.");
+    //     container.add(text);
+    // }
 
     public JFrame getFrame() {
         return frame;
