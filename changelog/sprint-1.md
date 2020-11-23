@@ -11,21 +11,22 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 2             | 2             |
 
 ## Sprint 1 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 1.1 | Preparing the x | Jane Doe | DONE |
-| 1.2 | Make the x | John Doe | FAILED |
+| 1.1 | Familiariasi dengan Java GUI + Pong | Semua | DONE |
+| 1.2 | Building JFrame UI buat main-menu selection | Rio | FAILED |
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+Karena idenya beda dari ide aspraknya, jadi untuk sprint planningnya berantakan banget, karena kami ngga tau apa aja yang harus dibuat.
+Sprint/Scrum juga konsep baru buat anggota kelompok kami.
 
 ## Next Sprint Backlog (Sprint 2)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 2.1 | Preparing the x | Jane Doe | 
-| 2.2 | Make the x | John Doe | 
+| 2.1 | Building JFrame/Grid buat main-game pong multiplayer | Nadhifal | 
+| 2.2 | Implementasi pong multiplayer dari referensi | Nadhifal | 
