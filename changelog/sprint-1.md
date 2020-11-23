@@ -18,12 +18,11 @@
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
 | 1.1 | Familiariasi dengan Java GUI + Pong | Semua | DONE |
-| 1.2 | Building JFrame UI buat main-menu selection | Rio | DONE |
+| 1.2 | Building JFrame & JPanel UI buat main-menu selection | Rio | DONE |
 
 ## Retrospective 
 
-Karena idenya beda dari ide aspraknya, jadi untuk sprint planningnya berantakan banget, karena kami ngga tau apa aja yang harus dibuat.
-Sprint/Scrum juga konsep baru buat anggota kelompok kami.
+Karena idenya beda dari ide aspraknya, jadi untuk sprint planningnya berantakan banget, karena kami ngga tau apa aja yang harus dibuat. Sprint/Scrum juga konsep baru buat anggota kelompok kami. Selain itu kendala lainnya juga buat kelompok kami yg semester 5, banyak project kuliah lain, jadi risetnya ngga bisa terlalu in-depth karena terkendala mengerjakan projek yang lain. 
 
 ## Next Sprint Backlog (Sprint 2)
 | ID  | Title/Desc | Asignee | 
