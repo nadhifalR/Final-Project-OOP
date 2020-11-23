@@ -2,12 +2,13 @@ import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import javax.swing.*;
+import java.awt.event.*;
 import javax.swing.WindowConstants;
 
 import javax.swing.SwingUtilities;
 
-public class Main {
-
+public abstract class Main implements ActionListener{
+    
     public static void main(String[] args) {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -16,6 +17,7 @@ public class Main {
         JButton btn1 = new JButton("Single-player");
         JButton btn2 = new JButton("Multi-player");
         JButton btn3 = new JButton("Options");
+
         panel.add(btn1);
         panel.add(btn2);
         panel.add(btn3);
@@ -26,6 +28,24 @@ public class Main {
         frame.getContentPane().add(panel);
         frame.setSize(550, 300);
         frame.setVisible(true);
+        frame.setLocationRelativeTo(null);
+
+
+        btn1.addActionListener(new ActionListener() { 
+            public void actionPerformed(ActionEvent e) { 
+                int mode = 1;
+                GameFrame frame1 = new GameFrame(mode);
+                frame.dispose();
+            } 
+          } );
+
+        btn2.addActionListener(new ActionListener() { 
+            public void actionPerformed(ActionEvent e) { 
+                int mode = 2;
+                GameFrame frame1 = new GameFrame(mode);
+                frame.dispose();
+            } 
+          } );
     }
 }
 
