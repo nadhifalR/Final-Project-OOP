@@ -18,7 +18,7 @@
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
 | 1.1 | Familiariasi dengan Java GUI + Pong | Semua | DONE |
-| 1.2 | Building JFrame UI buat main-menu selection | Rio | FAILED |
+| 1.2 | Building JFrame UI buat main-menu selection | Rio | DONE |
 
 ## Retrospective 
 
