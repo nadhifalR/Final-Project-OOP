@@ -50,4 +50,15 @@ UML soon.
 
 ## Notable Assumption and Design App Details
 
-TO;DO
+- Paddle (player 1) muncul di bagian kiri screen
+- Paddle (player 2) muncul di bagian kiri screen
+- Paddle (player 1&2) bergerak menggunakan key
+- Paddle (AI) bergerak mengikuti Ball
+- Paddle memiliki batas (akan menabrak) pada bagian atas dan bawah screen
+- Ball muncul di bagian tengah screen
+- Ball bergerak menuju arah yang random saat start
+- Ball berpantul saat menabrak Paddle
+- player 1 akan mendapat score ketika bola menyentuh bagian kanan screen
+- player 2 akan mendapat score ketika bola menyentuh bagian kiri screen
+- score akan di tampilkan di tengah bagian atas screen
+- game berakhir saat salah satu player mendapat score yang menjadi batasan pemenang
