@@ -64,7 +64,7 @@ public class GamePanel extends JPanel implements Runnable{
         }
 		ball.draw(g);
 		score.draw(g);
-Toolkit.getDefaultToolkit().sync();
+	Toolkit.getDefaultToolkit().sync();
 
 	}
 	public void move() {
