@@ -24,6 +24,8 @@ Pong is a reiteration of a classic and one of the first computer game 'Pong' whi
 - **[Sprint 2](changelog/sprint-2.md) - (date from 23 until 30 November 2020)** 
    - Building JFrame/Grid buat main-game pong multiplayer
    - Implementasi pong multiplayer dari referensi
+   - Implementasi pong singleplayer (membuat AI musuh)
+   - Menghubungkan main-game dengan ui main-menu
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from 30 November until 7 December 2020)** 
    - Short changes 1
