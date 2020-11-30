@@ -1,31 +1,34 @@
 # Scrum Report (Sprint 2)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 24/11/2020 to 30/11/2020
 
 ## Team (Insert your name)
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| 140810180030  | Rio Sapta Samudera  |
+| 140810180048  | Nadhifal Abdurrahman Rendusara  |
+| 140810190070  | Theoodrik Marcus Fritz Lopak |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 2             | 4             |
 
 ## Sprint 2 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 2.1 | Preparing the x | Jane Doe | DONE |
-| 2.2 | Make the x | John Doe | FAILED |
+| 2.1 | Building JFrame/Grid buat main-game pong multiplayer | Nadhifal | DONE |
+| 2.2 | Implementasi pong multiplayer dari referensi | Nadhifal | DONE |
+| 2.3 | Implementasi pong singleplayer (membuat AI musuh) | Nadhifal | DONE |
+| 2.4 | Menghubungkan main-game dengan ui main-menu | Nadhifal | DONE |
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. terdapat sedikit kesulitan di bagian teknis pada programming (bagaimana pilihan pada menu UI membedakan singleplayer dengan multiplayer). kendala lain adalah masalah waktu untuk membahas project bersama kelompok, maka dari itu sprint telat update dan uml blm siap.
 
 ## Next Sprint Backlog (Sprint 3)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 3.1 | Preparing the x | Jane Doe | 
-| 3.2 | Make the x | John Doe | 
+| 3.1 | Building JFrame buat game option pong | Rio | 
+| 3.2 | Implementasi AI difficulties pada singleplayer mode | Nadhifal |
+| 3.3 | Implementasi Endgame (batasan score yang menentukan pemenang) | Marcus | 
