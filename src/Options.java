@@ -21,7 +21,7 @@ class Options extends JFrame {
         panel.setAlignmentX(Component.CENTER_ALIGNMENT);
         panel.setPreferredSize(new Dimension(1000, 100));
         panel.setMaximumSize(new Dimension(1500, 100));
-        panel.setBorder(BorderFactory.createTitledBorder("Pong"));
+        panel.setBorder(BorderFactory.createTitledBorder("Options"));
         panel2.setBorder(BorderFactory.createTitledBorder("Your Score"));
         frame.getContentPane().add(panel);
         frame.getContentPane().add(panel2);
