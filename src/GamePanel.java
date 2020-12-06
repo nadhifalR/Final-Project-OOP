@@ -3,6 +3,10 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
+enum Game{
+	PLAYING, GAME_OVER
+}
+
 public class GamePanel extends JPanel implements Runnable{
 
     static int mode;
@@ -21,6 +25,7 @@ public class GamePanel extends JPanel implements Runnable{
     AIPaddle paddle3;
 	Ball ball;
 	Score score;
+	Game state = Game.PLAYING;
 	
 	GamePanel(int mode){
         this.mode = mode;
@@ -55,15 +60,29 @@ public class GamePanel extends JPanel implements Runnable{
 		g.drawImage(image,0,0,this);
 	}
 	public void draw(Graphics g) {
-        paddle1.draw(g);
-        if(mode==2){
-            paddle2.draw(g);
-        }
-        else{
-            paddle3.draw(g);
-        }
-		ball.draw(g);
-		score.draw(g);
+		if (state == Game.PLAYING) {
+			paddle1.draw(g);
+			if (mode == 2) {
+				paddle2.draw(g);
+			} else {
+				paddle3.draw(g);
+			}
+			ball.draw(g);
+			score.draw(g);
+		} else if (state == Game.GAME_OVER){
+			g.setColor(Color.white);
+			g.setFont(new Font("Arial", Font.PLAIN,50));
+			g.drawString("GAME OVER!",500,200);
+			if (score.player1 > score.player2){
+				g.drawString("Player 1 WIN!",450,400);
+				g.drawString("P1 Score = "+Integer.toString(score.player1),450,450);
+				g.drawString("P2 Score = "+Integer.toString(score.player2),450,500);
+			} else if (score.player1 < score.player2){
+				g.drawString("Player 2 WIN!",450,400);
+				g.drawString("P2 Score = "+Integer.toString(score.player2),450,450);
+				g.drawString("P1 Score = "+Integer.toString(score.player1),450,500);
+			}
+		}
 	Toolkit.getDefaultToolkit().sync();
 
 	}
@@ -152,6 +171,13 @@ public class GamePanel extends JPanel implements Runnable{
 			System.out.println("Player 1: "+score.player1);
 		}
     }
+
+    public void checkScore(){
+		if (score.player1 >= 20 || score.player2 >= 20){
+			state = Game.GAME_OVER;
+		}
+	}
+
 	public void run() {
 		//game loop
 		long lastTime = System.nanoTime();
@@ -163,8 +189,11 @@ public class GamePanel extends JPanel implements Runnable{
 			delta += (now -lastTime)/ns;
 			lastTime = now;
 			if(delta >=1) {
-				move();
+				if (state == Game.PLAYING) {
+					move();
+				}
 				checkCollision();
+				checkScore();
 				repaint();
 				delta--;
 			}
