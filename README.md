@@ -28,8 +28,8 @@ Pong is a reiteration of a classic and one of the first computer game 'Pong' whi
    - Menghubungkan main-game dengan ui main-menu
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from 30 November until 7 December 2020)** 
-   - Short changes 1
-   - Short changes 2
+   - Implementasi options buat difficulty dan tampilan score menggunakan JFrame
+   - Implementasi endgame
 
 ## Running The App
 
@@ -43,6 +43,7 @@ Pong is a reiteration of a classic and one of the first computer game 'Pong' whi
 - Ball
 - GameFrame
 - GamePanel
+- Options
 - Paddle
 - Score
 
