@@ -173,7 +173,7 @@ public class GamePanel extends JPanel implements Runnable{
     }
 
     public void checkScore(){
-		if (score.player1 >= 20 || score.player2 >= 20){
+		if (score.player1 >= 2 || score.player2 >= 2){
 			state = Game.GAME_OVER;
 		}
 	}

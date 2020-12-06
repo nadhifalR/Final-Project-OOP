@@ -8,7 +8,7 @@ public class GameFrame extends JFrame{
 	GameFrame(int mode){
 		panel = new GamePanel(mode);
 		this.add(panel);
-		this.setTitle("PONG");
+		this.setTitle("Pong (Use WASD/Arrow Keys to Move)");
 		this.setResizable(false);
 		this.setBackground(Color.black);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
