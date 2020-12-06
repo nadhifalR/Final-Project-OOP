@@ -16,6 +16,7 @@ public class GamePanel extends JPanel implements Runnable{
 	static final int BALL_DIAMETER = 20;
 	static final int PADDLE_WIDTH = 25;
 	static final int PADDLE_HEIGHT = 100;
+	static int maxScore = 1;
 	Thread gameThread;
 	Image image;
 	Graphics graphics;
@@ -69,18 +70,19 @@ public class GamePanel extends JPanel implements Runnable{
 			}
 			ball.draw(g);
 			score.draw(g);
+		//End Game
 		} else if (state == Game.GAME_OVER){
 			g.setColor(Color.white);
 			g.setFont(new Font("Arial", Font.PLAIN,50));
-			g.drawString("GAME OVER!",500,200);
+			g.drawString("GAME OVER!",350,GAME_HEIGHT/2);
 			if (score.player1 > score.player2){
-				g.drawString("Player 1 WIN!",450,400);
-				g.drawString("P1 Score = "+Integer.toString(score.player1),450,450);
-				g.drawString("P2 Score = "+Integer.toString(score.player2),450,500);
+				g.drawString("Player 1 WIN!",350,400);
+				g.drawString("P1 Score = "+Integer.toString(score.player1),350,450);
+				g.drawString("P2 Score = "+Integer.toString(score.player2),350,500);
 			} else if (score.player1 < score.player2){
-				g.drawString("Player 2 WIN!",450,400);
-				g.drawString("P2 Score = "+Integer.toString(score.player2),450,450);
-				g.drawString("P1 Score = "+Integer.toString(score.player1),450,500);
+				g.drawString("Player 2 WIN!",350,400);
+				g.drawString("P2 Score = "+Integer.toString(score.player2),350,450);
+				g.drawString("P1 Score = "+Integer.toString(score.player1),350,500);
 			}
 		}
 	Toolkit.getDefaultToolkit().sync();
@@ -172,10 +174,15 @@ public class GamePanel extends JPanel implements Runnable{
 		}
     }
 
+	//End Score
     public void checkScore(){
-		if (score.player1 >= 2 || score.player2 >= 2){
+		if (score.player1 >= maxScore || score.player2 >= maxScore){
 			state = Game.GAME_OVER;
 		}
+	}
+
+	public static void setScore(int mScore){
+		maxScore = mScore;
 	}
 
 	public void run() {

@@ -4,10 +4,22 @@ import java.awt.event.*;
 public class AIPaddle extends Rectangle{
 
     int yVelocity;
-    int speed = 10;
+    static int speed = 10;
 	
 	AIPaddle(int x, int y, int PADDLE_WIDTH, int PADDLE_HEIGHT){
 		super(x,y,PADDLE_WIDTH,PADDLE_HEIGHT);
+    }
+    
+    public static void setDifficulty(String Dif){
+		if (Dif == "Easy") {
+            speed=5;
+        } 
+        else if(Dif == "Medium"){
+            speed=10;
+        }
+        else {
+            speed=20;
+        }
 	}
 
 	public void move(int bx, int by, int game_width, int PADDLE_HEIGHT) {

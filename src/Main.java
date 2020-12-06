@@ -37,7 +37,7 @@ public abstract class Main implements ActionListener{
                 GameFrame frame1 = new GameFrame(mode);
                 frame.dispose();
             } 
-          } );
+        } );
 
         btn2.addActionListener(new ActionListener() { 
             public void actionPerformed(ActionEvent e) { 
@@ -45,13 +45,13 @@ public abstract class Main implements ActionListener{
                 GameFrame frame1 = new GameFrame(mode);
                 frame.dispose();
             } 
-          } );
+        } );
 
-          btn3.addActionListener(new ActionListener() { 
+        btn3.addActionListener(new ActionListener() { 
             public void actionPerformed(ActionEvent e) { 
-                Options frame1 = new Options();
+                Options.Options();
             } 
-          } );
+        } );
     }
 }
 
