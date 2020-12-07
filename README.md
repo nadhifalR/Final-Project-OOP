@@ -48,7 +48,7 @@ Pong is a reiteration of a classic and one of the first computer game 'Pong' whi
 - Paddle
 - Score
 
-![alt text](images/UMLrevisi.png)
+![alt text](images/UML.png)
 
 ## Notable Assumption and Design App Details
 
